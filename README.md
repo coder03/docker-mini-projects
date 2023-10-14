@@ -1,20 +1,14 @@
 # docker-mini-projects
 
-Branch: host static html on nginx
+Branch: host-springboot-helloworld
 
-Using ubuntu container host a static index.html on nginx server.
+Using ubuntu container to host springboot app.
 
-How to run?
-make build runs following commands:
-  docker build -t htmlserverimage .
-  docker run -d -p 80:80 --name htmlservercontainer htmlserverimage
+How to build?
+  make build 
 
 How to test?
-make test runs this command:
-  curl http://localhost
+  make test:
 
 How to clean up?
-make clean runs following command:
-  docker stop htmlservercontainer
-  docker rm htmlservercontainer 
-  docker rmi htmlserverimage
+  make clean

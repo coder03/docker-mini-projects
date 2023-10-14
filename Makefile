@@ -1,13 +1,13 @@
 build:
-	docker build -t htmlserverimage .
-	docker run -d -p 80:80 --name htmlservercontainer htmlserverimage
-	echo "Succesfully built image htmlserverimage and container htmlservercontainer"
+	docker build -t springserverimage .
+	docker run -d -p 80:8080 --name springservercontainer springserverimage
+	echo "Succesfully built image springserverimage and container springservercontainer"
 	echo "Run test with make test"
 
 test:
-	curl http://localhost
+	curl http://localhost:80/hello
 
 clean:
-	docker stop htmlservercontainer
-	docker rm htmlservercontainer
-	docker rmi htmlserverimage
+	docker stop springservercontainer
+	docker rm springservercontainer
+	docker rmi springserverimage

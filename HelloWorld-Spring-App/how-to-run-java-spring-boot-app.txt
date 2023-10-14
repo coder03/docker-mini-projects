@@ -1,0 +1,5 @@
+To create spring-boot-helloworld-0.0.1-SNAPSHOT.jar file, run "mvn package"
+SpringBootHelloworldApplication.java is the code of main method 
+
+TO run on linux:
+  java -jar spring-boot-helloworld-0.0.1-SNAPSHOT.jar 
