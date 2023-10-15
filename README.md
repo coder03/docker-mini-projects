@@ -1,6 +1,6 @@
 # docker-mini-projects
 
-Branch: host static html on nginx
+Branch: host-static-html-on-nginx 
 
 Using ubuntu container host a static index.html on nginx server.
 
@@ -18,3 +18,7 @@ make clean runs following command:
   docker stop htmlservercontainer
   docker rm htmlservercontainer 
   docker rmi htmlserverimage
+
+Docker commands:
+  containers: docker ps
+  images : docker images
